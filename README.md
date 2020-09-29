@@ -38,4 +38,4 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 
 ## 进度
 
-- 2020-09-29 定第一步微积分、线代相关参考资料和计划；
+- 2020-09-29 定微积分、线代相关参考资料和计划；
