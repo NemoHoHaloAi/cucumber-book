@@ -5,7 +5,7 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 
 学习目标：
 - 数学：
-  - 普林斯顿微积分读本；
+  - 普林斯顿微积分读本，[图解](https://zhuanlan.zhihu.com/p/31199228)；
   - 统计学；
 - ML：
   - 西瓜书；
