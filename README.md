@@ -21,6 +21,6 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 - 普林斯顿微积分读本；
 - [图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
 - [微积分本质](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&amp;mid=2247486952&amp;idx=1&amp;sn=9656fafcae1aef172a8484e1ab369282&amp;chksm=9bdfb5cfaca83cd9a5a7aff58dc315b3118ed05efc664442cf9949499d8e4479a70de3442511&scene=21#wechat_redirect)；
-- [图解线性代数](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247488295&idx=1&sn=9f83afda8442d877a3615b832401fb8b&chksm=9bdfab00aca822162f0c1014fcd6155dbcfa0565f664d7c04632e910e4ca5c3b7cbbcc9d3915&scene=21#wechat_redirect)
+- [图解高等数学|线性代数 合集](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247488295&idx=1&sn=9f83afda8442d877a3615b832401fb8b&chksm=9bdfab00aca822162f0c1014fcd6155dbcfa0565f664d7c04632e910e4ca5c3b7cbbcc9d3915&scene=21#wechat_redirect)
 - [数学建模视频教程](https://zhuanlan.zhihu.com/p/120359355)
 - [大学微积分入门](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247487239&idx=2&sn=e566740675c44cf90413d28dc4b8d4f9&scene=21#wechat_redirect)
