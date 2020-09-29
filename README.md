@@ -21,6 +21,13 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 
 开始时间：2020-10-07；
 
+学习计划：
+- 工作日：
+  - 不加班：一小时到两小时；
+  - 加班：半小时到一小时；
+- 休息日：
+  - 保持每天在5小时以上学习时间；
+
 使用资料：
 - 普林斯顿微积分读本；
 - [图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
