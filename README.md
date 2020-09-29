@@ -19,6 +19,8 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 - 微积分；
 - 线代；
 
+开始时间：2020-10-07；
+
 使用资料：
 - 普林斯顿微积分读本；
 - [图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
@@ -26,3 +28,7 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 - [图解高等数学|线性代数 合集](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247488295&idx=1&sn=9f83afda8442d877a3615b832401fb8b&chksm=9bdfab00aca822162f0c1014fcd6155dbcfa0565f664d7c04632e910e4ca5c3b7cbbcc9d3915&scene=21#wechat_redirect)
 - [数学建模视频教程](https://zhuanlan.zhihu.com/p/120359355)
 - [大学微积分入门](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247487239&idx=2&sn=e566740675c44cf90413d28dc4b8d4f9&scene=21#wechat_redirect)
+
+## 进度
+
+- 2020-09-29 定第一步微积分、线代相关参考资料和计划；
