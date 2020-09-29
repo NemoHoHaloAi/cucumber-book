@@ -14,5 +14,6 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 学习方式：以西瓜书为主线，辅以南瓜书，对于自己来说最难的公式推导部分，适当的补充相关的微积分、线代、统计学等知识，这些数学知识与ML的学习应该是并行的；
 
 ## Step 1
-
-数学：普林斯顿微积分读本+图解；
+- 普林斯顿微积分读本；
+- [图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
+- [微积分本质](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&amp;mid=2247486952&amp;idx=1&amp;sn=9656fafcae1aef172a8484e1ab369282&amp;chksm=9bdfb5cfaca83cd9a5a7aff58dc315b3118ed05efc664442cf9949499d8e4479a70de3442511&scene=21#wechat_redirect)；
