@@ -16,8 +16,10 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
 ## Step 1
 
 学习内容：
-- 微积分；
-- 线代；
+1. 微积分；
+2. 线代；
+3. 概率论；
+4. 其他；
 
 开始时间：2020-10-07；
 
@@ -29,7 +31,6 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
   - 保持每天在5小时以上学习时间；
 
 使用资料：
-- [学习顺序的介绍文章：基础、进阶、高级](https://www.zhihu.com/question/36324957)；
 - 微积分学习主要使用：普林斯顿微积分读本；
 - 微积分读本学习辅助资料：[图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
 - 微积分课后补充：[微积分本质](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&amp;mid=2247486952&amp;idx=1&amp;sn=9656fafcae1aef172a8484e1ab369282&amp;chksm=9bdfb5cfaca83cd9a5a7aff58dc315b3118ed05efc664442cf9949499d8e4479a70de3442511&scene=21#wechat_redirect)；
