@@ -31,13 +31,15 @@ Cucumber Book for Pumpkin Book for Watermelon Book.
   - 保持每天在5小时以上学习时间；
 
 使用资料：
-- [什么是微积分](https://www.zhihu.com/question/336322284/answer/918067537)；
-- 微积分学习主要使用：普林斯顿微积分读本；
-- 微积分读本学习辅助资料：[图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
-- 微积分课后补充：[微积分本质](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&amp;mid=2247486952&amp;idx=1&amp;sn=9656fafcae1aef172a8484e1ab369282&amp;chksm=9bdfb5cfaca83cd9a5a7aff58dc315b3118ed05efc664442cf9949499d8e4479a70de3442511&scene=21#wechat_redirect)；
-- [图解高等数学|线性代数 合集](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247488295&idx=1&sn=9f83afda8442d877a3615b832401fb8b&chksm=9bdfab00aca822162f0c1014fcd6155dbcfa0565f664d7c04632e910e4ca5c3b7cbbcc9d3915&scene=21#wechat_redirect)
-- [数学建模视频教程](https://zhuanlan.zhihu.com/p/120359355)
-- [大学微积分入门](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247487239&idx=2&sn=e566740675c44cf90413d28dc4b8d4f9&scene=21#wechat_redirect)
+- 微积分：
+    - [什么是微积分](https://www.zhihu.com/question/336322284/answer/918067537)；
+    - 微积分学习主要使用：普林斯顿微积分读本；
+    - 微积分读本学习辅助资料：[图解普林斯顿微积分读本](https://zhuanlan.zhihu.com/p/31199228)；
+    - 微积分视频资料：[大学微积分入门](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247487239&idx=2&sn=e566740675c44cf90413d28dc4b8d4f9&scene=21#wechat_redirect)；
+    - 微积分课后补充：[微积分本质](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&amp;mid=2247486952&amp;idx=1&amp;sn=9656fafcae1aef172a8484e1ab369282&amp;chksm=9bdfb5cfaca83cd9a5a7aff58dc315b3118ed05efc664442cf9949499d8e4479a70de3442511&scene=21#wechat_redirect)；
+- 线性代数；
+    - [图解高等数学|线性代数 合集](https://mp.weixin.qq.com/s?__biz=MzAxNzg3MTE3Ng==&mid=2247488295&idx=1&sn=9f83afda8442d877a3615b832401fb8b&chksm=9bdfab00aca822162f0c1014fcd6155dbcfa0565f664d7c04632e910e4ca5c3b7cbbcc9d3915&scene=21#wechat_redirect)；
+- [数学建模视频教程](https://zhuanlan.zhihu.com/p/120359355)；
 - 公式之美；
 
 ## 进度
