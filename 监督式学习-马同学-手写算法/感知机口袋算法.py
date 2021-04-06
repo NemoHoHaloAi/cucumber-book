@@ -1,6 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''
+感知机口袋算法：与暴力法不同，口袋算法提供了两项改动，首先通过epochs控制完整的数据训练次数，其次同步保存目前的最优w和b，这使得它可以在有限次数内处理可分和不可分情况；
+'''
+
 # 初始化 w 和 b，np.array 相当于定义向量
 w,b = np.array([0, 0]),0 
 

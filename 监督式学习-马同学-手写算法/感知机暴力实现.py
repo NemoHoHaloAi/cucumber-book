@@ -1,6 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''
+感知机：线性二分类模型，拟合分割超平面对数据进行分类；
+暴力实现：无脑针对每一个错误点进行w和b的更新，可以证明在线性可分情况下，有限次迭代可以完成划分；
+'''
+
 # 初始化 w 和 b，np.array 相当于定义向量
 w,b = np.array([0, 0]),0 
 
