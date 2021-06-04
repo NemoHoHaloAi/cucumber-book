@@ -104,7 +104,10 @@ class LogisticRegression(LR):
         return 1 if value>=threshold else -1
 
     def predict(self,x):
-        return self.sign(self.wk.dot(np.append(np.array(1),x)),.5)
+        return self.sign(self.h(np.append(np.array(1),x)),.5)
+
+    def predict_prob(self,x):
+        return self.h(np.append(np.array(1),x))
 
 if __name__ == '__main__':
     X = np.array([[5,2], [3,2], [2,7], [1,4], [6,1], [4,5], [2,4.5]])
@@ -133,13 +136,13 @@ if __name__ == '__main__':
     iris = load_iris()
     X = iris.data
     y = iris.target
-    model = LogisticRegression(X=X,y=y,epochs=1000000,eta=.1,epsilon=0.0005)
+    model = LogisticRegression(X=X,y=y,epochs=10000,eta=.1,epsilon=0.0005)
     i,norm,w = model.train()
     print(f"epochs={i} -> w={w} -> norm={norm:>.8f}")
 
     iris = load_iris()
     X = iris.data
     y = iris.target
-    model = LogisticRegression(X=X,y=y,epochs=1000000,eta=.1,epsilon=0.0005,sgd=True)
+    model = LogisticRegression(X=X,y=y,epochs=10000,eta=.1,epsilon=0,sgd=True)
     i,norm,w = model.train()
     print(f"epochs={i} -> w={w} -> norm={norm:>.8f}")

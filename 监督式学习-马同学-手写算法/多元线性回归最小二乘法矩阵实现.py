@@ -17,3 +17,19 @@ if __name__ == '__main__':
     model = LR(X=X0,y=y)
     w,b = model.train()
     print(f'多元线性回归最小二乘法的矩阵方式结果为：w={w} b={b}')
+
+    X0 = X0[:,::-1]
+    model = LR(X=X0,y=y)
+    w,b = model.train()
+    print(f'多元线性回归最小二乘法的矩阵方式结果为：w={w} b={b}')
+
+    X0 = X0[:2,:]
+    y = y[:2]
+    model = LR(X=X0,y=y)
+    w,b = model.train()
+    print(f'多元线性回归最小二乘法的矩阵方式结果为：w={w} b={b}')
+
+    X0 = X0[:,::-1]
+    model = LR(X=X0,y=y)
+    w,b = model.train()
+    print(f'多元线性回归最小二乘法的矩阵方式结果为：w={w} b={b}')

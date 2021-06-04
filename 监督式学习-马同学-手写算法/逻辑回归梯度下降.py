@@ -1,6 +1,7 @@
 import numpy as np
 from 线性回归最小二乘法矩阵实现 import LinearRegression as LR
 from sklearn.datasets import load_iris
+import matplotlib.pyplot as plt
 
 '''
 决策边界：
@@ -78,19 +79,39 @@ class LogisticRegression(LR):
             self.wk = self.wk-self.eta*drhdwk
         return i_,norm,self.wk
 
-    def sign(self,value,threshold):
-        return 1 if value>=threshold else -1
+    def sign(self,value):
+        return 1 if value>=0 else -1
 
     def predict(self,x):
-        return sign(self.wk.dot(self.x),.5)
+        return self.sign(self.wk.dot(np.append([1],x)))
 
 if __name__ == '__main__':
     X = np.array([[5,2], [3,2], [2,7], [1,4], [6,1], [4,5], [2,4.5]])
     y = np.array([-1, -1, 1, 1, -1, 1, -1, ])
+    X = np.array([[5,2], [3,2], [2,7], [1,4], [6,1], [4,5]])
+    y = np.array([-1, -1, 1, 1, -1, 1, ])
+    iris = load_iris()
+    X = iris.data[iris.target<2,:2]
+    y = iris.target[iris.target<2]
+    y[y==0] = -1
 
     model = LogisticRegression(X=X,y=y,epochs=10000,eta=.2,epsilon=0.0001)
     i,norm,w = model.train()
     print(f"epochs={i} -> w={w} -> norm={norm:>.8f}")
+    for xi,yi in zip(X,y):
+        print(yi,model.predict(xi))
+
+    w,b = w[1:],w[0]
+    positive = [x for x,y in zip(X,y) if y==1]
+    negative = [x for x,y in zip(X,y) if y==-1]
+    line = [(-w[0]*x-b)/w[1] for x in [-100,100]]
+    plt.title('w='+str(w)+', b='+str(b))
+    plt.scatter([x[0] for x in positive],[x[1] for x in positive],c='green',marker='o')
+    plt.scatter([x[0] for x in negative],[x[1] for x in negative],c='red',marker='x')
+    plt.plot([-100,100],line,c='black')
+    plt.xlim(min([x[0] for x in X])-1,max([x[0] for x in X])+1)
+    plt.ylim(min([x[1] for x in X])-1,max([x[1] for x in X])+1)
+    plt.show()
 
     iris = load_iris()
     X = iris.data
