@@ -38,7 +38,7 @@ import matplotlib.pyplot as plt
 
 
 误差函数：
-    感知机：yi*sign(w*xi+b)，yi∈{-1,+1}，模型分类正确返回值为+1，错误返回值为-1，对所有样本进行求和即可得到score值
+    感知机：yi*sign(w*xi+b)，yi∈{-1,+1}，模型分类正确返回值为+1，错误返回值为-1，对所有样本进行求和即可得到score值；
     逻辑回归：ln(1+e^-(yi*wxi))，yi∈{-1,+1}，模型分类正确返回值>=0，错误返回值<0，且错误越严重（正类：1%，负类：99%），负数越大，对所有样本计算该误差加起来求平均即为逻辑回归的误差函数；
 '''
 
@@ -88,12 +88,12 @@ class LogisticRegression(LR):
 if __name__ == '__main__':
     X = np.array([[5,2], [3,2], [2,7], [1,4], [6,1], [4,5], [2,4.5]])
     y = np.array([-1, -1, 1, 1, -1, 1, -1, ])
-    X = np.array([[5,2], [3,2], [2,7], [1,4], [6,1], [4,5]])
-    y = np.array([-1, -1, 1, 1, -1, 1, ])
-    iris = load_iris()
-    X = iris.data[iris.target<2,:2]
-    y = iris.target[iris.target<2]
-    y[y==0] = -1
+    # X = np.array([[5,2], [3,2], [2,7], [1,4], [6,1], [4,5]])
+    # y = np.array([-1, -1, 1, 1, -1, 1, ])
+    # iris = load_iris()
+    # X = iris.data[iris.target<2,:2]
+    # y = iris.target[iris.target<2]
+    # y[y==0] = -1
 
     model = LogisticRegression(X=X,y=y,epochs=10000,eta=.2,epsilon=0.0001)
     i,norm,w = model.train()

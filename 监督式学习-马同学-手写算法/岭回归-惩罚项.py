@@ -12,14 +12,14 @@ from 多项式回归 import PolynomialRegression as PR
 这种退化可以看到是对二阶多项式增加了约束条件：w0=0,w1=0,w2=0
 因此对于多项式回归，任意低阶都可以看作是其高阶+惩罚项的组合结果
 
-惩罚项的意义：通过对公式增加灵活的约束条件，可以更平滑的控制模型复杂度，只要约束条件是有意义的，那么它就降低了原假设空间的大小，例如对于线性回归w0*x0+b，W=(w0 b)，即W的可取范围为整个二维平面，如果增加约束提交w0^2+b^2<r^2，则W的取值范围为二维平面上以r为半径的圆内，而W决定了线性回归的假设空间大小，因此通过约束条件得以降低假设空间大小的目的；
+惩罚项的意义：通过对公式增加灵活的约束条件，可以更平滑的控制模型复杂度，只要约束条件是有意义的，那么它就降低了原假设空间的大小，例如对于线性回归w0*x0+b，W=(w0 w1)，即W的可取范围为整个二维平面，如果增加约束条件w0^2+w1^2<r^2，则W的取值范围为二维平面上以r为半径的圆内，而W决定了线性回归的假设空间大小，因此通过约束条件得以降低假设空间大小的目的；
 
 岭回归 = 线性回归 + 优化目标(argmin MSE)上增加约束条件(s.t. ||w||^2<=r^2)
 '''
 
 class RidgeRegression(PR):
-    def __init__(self,X,y,degress=1,lambdaVal=0):
-        super(RidgeRegression,self).__init__(X,y,degress)
+    def __init__(self,X,y,degrees=1,lambdaVal=0):
+        super(RidgeRegression,self).__init__(X,y,degrees)
         self.lambdaVal = lambdaVal
 
     def train(self):
@@ -69,14 +69,21 @@ if __name__ == '__main__':
 
 
     for pos,deg in zip([331,332,333],[2,5,10]):
-        model = PR(X=X,y=y,degress=deg)
+        model = PR(X=X,y=y,degrees=deg)
         w,b = model.train()
         print(f'最小二乘法的矩阵方式结果为：w={w} b={b}')
         line_x = [x_min+(x_max-x_min)*(i/100) for i in range(-1,102,1)]
         line_y = [model.predict(x) for x in line_x]
         pain(pos,'X','y','DEG='+str(deg),X[:,0],y[:,0],line_x,line_y)
-    for pos,deg,lambdaVal in zip([334,335,336,337,338,339],[10,10,10,10,10,10],[0,0.01,0.1,10,10000,100000]):
-        model = RidgeRegression(X=X,y=y,degress=deg,lambdaVal=lambdaVal)
+    for pos,deg,lambdaVal in zip([334,335,336],[5,5,5],[0.1,1,10]):
+        model = RidgeRegression(X=X,y=y,degrees=deg,lambdaVal=lambdaVal)
+        w,b = model.train()
+        print(f'最小二乘法的矩阵方式结果为：w={w} b={b}')
+        line_x = [x_min+(x_max-x_min)*(i/100) for i in range(-1,102,1)]
+        line_y = [model.predict(x) for x in line_x]
+        pain(pos,'X','y','DEG='+str(deg)+', λ='+str(lambdaVal),X[:,0],y[:,0],line_x,line_y)
+    for pos,deg,lambdaVal in zip([337,338,339],[10,10,10],[0.1,1,10]):
+        model = RidgeRegression(X=X,y=y,degrees=deg,lambdaVal=lambdaVal)
         w,b = model.train()
         print(f'最小二乘法的矩阵方式结果为：w={w} b={b}')
         line_x = [x_min+(x_max-x_min)*(i/100) for i in range(-1,102,1)]

@@ -34,8 +34,8 @@ plt.plot(xx, f(xx), 'k--')
 X_train,X_test,y_train,y_test = tts(X,y,test_size=0.3,random_state=10086)
 X_train,X_test,y_train,y_test = X_train.reshape(-1,1),X_test.reshape(-1,1),y_train.reshape(-1,1),y_test.reshape(-1,1)
 
-for pos,deg in zip([334,335,336,337,338,339],[1,2,3,5,7,10]):
-    model = PR(X=X_train,y=y_train,degress=deg)
+for pos,deg in zip([334,335,336,337,338,339],[1,3,5,8,15,20]):
+    model = PR(X=X_train,y=y_train,degrees=deg)
     w,b = model.train()
     x_min,x_max = min(X_train),max(X_train)
     line_x = [x_min+(x_max-x_min)*(i/100) for i in range(100)]
@@ -45,8 +45,8 @@ for pos,deg in zip([334,335,336,337,338,339],[1,2,3,5,7,10]):
 plt.tight_layout()
 plt.show()
 
-for pos,deg in zip([334,335,336,337,338,339],[1,2,3,5,7,10]):
-    model = PR(X=X_train,y=y_train,degress=deg)
+for pos,deg in zip([334,335,336,337,338,339],[1,3,5,8,15,20]):
+    model = PR(X=X_train,y=y_train,degrees=deg)
     w,b = model.train()
     print(w,b)
     x_min,x_max = min(X_test),max(X_test)

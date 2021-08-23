@@ -24,17 +24,17 @@ line_x = [min(X[:,0]),max(X[:,0])]
 line_y = [model.predict(np.array([min(X[:,0])])),model.predict(np.array([max(X[:,0])]))]
 pain(151,'x','y','degress=1',X[:,0],y[:,0],line_x,line_y)
 
-X2 = np.hstack([X**2,X])
+X2 = X**2
 model = LR(X=X2,y=y)
 w,b = model.train()
 print(w,b)
 line_x = [min(X2[:,0]),max(X2[:,0])]
-line_y = [model.predict(np.array([x**2,x])) for x in line_x]
+line_y = [model.predict(np.array([x**2])) for x in line_x]
 pain(152,'x^2','y','translate coord & degress=2',X2[:,0],y[:,0],line_x,line_y)
 
 x_min,x_max = min(X[:,0]),max(X[:,0])
 line_x = [x_min+(x_max-x_min)*(i/100) for i in range(100)]
-line_y = [model.predict(np.array([x**2,x])) for x in line_x]
+line_y = [model.predict(np.array([x**2])) for x in line_x]
 pain(153,'x','y','degress=2',X[:,0],y[:,0],line_x,line_y)
 
 model = PR(X=X,y=y,degress=5)

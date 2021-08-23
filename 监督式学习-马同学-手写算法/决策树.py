@@ -162,13 +162,3 @@ if __name__ == "__main__":
     for xi,yi in zip(X,y):
         print("pred:",tree.predict(xi),", real:",yi)
     print("------------------------------------------------------")
-    # pain(pos=121,title='Decision Tree',xlabel='x1',ylabel='x2',resolution=1,model=tree,X=X,y=y)
-    
-    # tree = DecisionTreeClassifier(criterion="entropy",random_state=19920901)
-    # tree.fit(X,y)
-    # print(y)
-    # print(tree.predict(X))
-    # print(tree.decision_path(X))
-    # pain(pos=111,title='Decision Tree',xlabel='x1',ylabel='x2',model=tree,X=X,y=y)
-
-    plt.show()
